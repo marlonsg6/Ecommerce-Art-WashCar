@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art WashCar - Shampoo Automotivo V-Mol 5L - Vonixx</title>
+
+    <link rel="stylesheet" href="./assets/bootstrap-4.1.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Autenticar</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-modal">
+                        <div class="form">
+                            <h2>Já sou cadastrado</h2>
+                            <p>Para autenticar, informe seu e-mail ou CPF/CNPJ</p>
+                            <form class="login">
+                                <label for="login-email">E-MAIL OU CPF/CNPJ:</label>
+                                <input type="text" id="login-email" name="login-email">
+                                <label for="login-password">SENHA:</label>
+                                <input type="password" id="login-password" name="login-password">
+                                <div id="botoes_login">
+
+                                    <button class="entrar-modal" type="submit">ENTRAR</button>
+                                    <a id="redefinir_senha" href="./index.html">redefinir senha</a>
+                                </div>
+
+                            </form>
+
+                            <p>Primeira vez no site?
+                                <a id="criar-conta" href="./cadastro.html">Criar uma conta</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a class="artwashcar" href="./index.html">Art WashCar</a>
+                </li>
+                <li>
+                    <input type="search" placeholder=" O que você procura?">
+                </li>
+                <li>
+                    <a href="">Carrinho</a>
+                </li>
+                <li>
+                    <a data-toggle="modal" data-target="#modalExemplo" id="open-modal" href="">Minha conta</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <nav class="categorias">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./cat-acessorios.html">Acessórios</a></li>
+                <li><a href="./cat-limpeza-externa.html">Limpeza externa</a></li>
+                <li><a href="./cat-limpeza-interna.html">Limpeza interna</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <a href="./index.html">
+            <figure>
+                <img class="back" src="./assets/img/back-player-multimedia-svgrepo-com.svg" alt="">
+            </figure>
+        </a>
+
+        <div class="informacoes-produto">
+            <div class="galeria">
+                <ul>
+                    <li><img src="./assets/img/shampoo-vonixx2.jfif" alt="Img 1"></li>
+                    <li><img src="./assets/img/shampoo-vonixx1.jfif" alt="Img 2"></li>
+                </ul>
+                <figure>
+                    <img class="principal" id="shampoo" src="./assets/img/shampoo-vonixx1.jfif" alt="img-principal">
+                </figure>
+            </div>
+            <div class="descricao-produto">
+                <strong class="nome-produto">Shampoo Automotivo V-Mol 5L - Vonixx</strong>
+                <p>Vonnix V-Mol é um lava autos é ideal para lavagem de automóveis, em especial para remoção de sujeiras
+                    mais difíceis, como remoção de barro e óleo, possuindo em sua formulação agentes que que aumentam
+                    seu poder de limpeza, sendo um detergente excelente para limpeza pesada em veículos com extrema
+                    sujeira. Tendo como diferencial seu alto poder de limpeza, fazendo a flotação das partículas de
+                    sujidades para uma limpeza mais rápida e profunda, não manchando plásticos, borrachas e metais.</p>
+                <div class="compra-produto">
+                    <strong>R$ 114,90</strong>
+                    <button type="button" class="btn btn-success">Comprar</button>
+                </div>
+                <p>
+                    Até <strong>10x s/juros</strong>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="container mt-3">
+            <h1 class="text-center mb-4">Outros Produtos</h1>
+            <div class="row">
+
+                <div class="col-md-4 mb-">
+                    <div class="card">
+                        <img id="imagem-2"
+                            src="./assets/img/ok_limpa_vidros_500ml_go_eco_wash_4457_1_8cf7ff5ca419eeef195cc41f0c48b934.webp"
+                            class="card-img-top" alt="Produto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">OK! Limpa Vidros Go 500ml - Eco Wash</h5>
+                        </div>
+                        <div class="card-body" id="card-price">
+                            <strong class="card-text">R$ 37,93</strong>
+                            <div id="btn-comprar">
+                                <svg id="carrinho" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                </svg>
+                                <a href="">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img id="imagem-2" src="./assets/img/DETERGENTE-NEUTRO-BIOZ1.jpg" class="card-img-top"
+                            alt="Produto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Detergente Neutro biodegradável 5L - BioZ Green</h5>
+                        </div>
+                        <div class="card-body" id="card-price">
+                            <strong class="card-text">R$ 68,88</strong>
+                            <div id="btn-comprar">
+                                <svg id="carrinho" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                </svg>
+                                <a href="">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img id="imagem-2" src="./assets/img/CERA-AUTHENTIC-PREMIUM1.webp" class="card-img-top"
+                            alt="Produto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Cera Authentic Premium 200g - Soft99</h5>
+                        </div>
+                        <div class="card-body" id="card-price">
+                            <strong class="card-text">R$ 150,00</strong>
+                            <div id="btn-comprar">
+                                <svg id="carrinho" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                </svg>
+                                <a href="./tela-produto-cera.html">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-informacoes">
+
+            <ul id="footer-institucional">
+                <span id="footer-titulo">Institucional</span>
+                <li>
+                    <a href="">Sobre a BioWash</a>
+                </li>
+                <li>
+                    <a href="">Política de privacidade</a>
+                </li>
+                <li>
+                    <a href="">Trocas e devoluções</a>
+                </li>
+            </ul>
+            <ul id="footer-contato">
+                <span id="footer-titulo">Atendimento</span>
+                <li>
+                    <img src="./assets/img/telephone-branco.svg" alt="icone-telefone">
+                    <a href="">(99) 9999-9999</a>
+                </li>
+                <li>
+                    <img src="./assets/img/whatsapp-branco.svg" alt="icone-whatsapp">
+                    <a href="">(99) 99999-9999</a>
+                </li>
+            </ul>
+            <ul id="footer-redes-sociais">
+                <span id="footer-titulo">Redes Sociais</span>
+                <li>
+                    <a href=""><img src="./assets/img/facebook-branco.svg" alt=""></a>
+                    <a href=""><img src="./assets/img/instagram-branco.svg" alt=""></a>
+                    <a href=""><img id="x" src="./assets/img/x-branco.png" alt=""></a>
+                </li>
+            </ul>
+            <ul id="footer-pagamento">
+                <span id="footer-titulo">Bandeiras de Pagamento</span>
+                <li>
+                    <img id="bandeiras-pgto" src="./assets/img/BANDEIRAS-CARTOES-site-concurso-removebg-preview.png"
+                        alt="bandeiras de pagamento">
+                </li>
+            </ul>
+            <ul id="footer-selo-seguranca">
+               <span id="footer-titulo">Selos de Segurança</span>
+               <li>
+                <img id="selos-seguranca" src="./assets/img/selos-seguranca-removebg-preview.png" alt="">
+               </li> 
+            </ul>
+        </div>
+        <span>contato@artwashcar.com.br</span>
+        <span>Razão Social: Art WashCar Distribuidora de Produtos Automotivos LTDA CNPJ: 18.098.180/0001-51</span>
+    </footer>
+
+    <script src="./assets/bootstrap-4.1.3-dist/js/jquery-3.3.1.slim.min.js.js"></script>
+    <script src="./assets/bootstrap-4.1.3-dist/js/popper.min.js.js"></script>
+    <script src="./assets/bootstrap-4.1.3-dist/js/bootstrap.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

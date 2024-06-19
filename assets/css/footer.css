@@ -1,0 +1,54 @@
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-informacoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    /* Responsive: Set a wider max-width for larger screens */
+    max-width: 300px;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .footer span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #footer-contato li,
+  #footer-redes-sociais li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  
+  #footer-contato img,
+  #footer-redes-sociais img {
+    width: 20px;
+  }
+  
+  #bandeiras-pgto {
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  #selos-seguranca {
+    width: 100%;
+  }

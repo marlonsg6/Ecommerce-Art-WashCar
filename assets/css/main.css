@@ -1,0 +1,199 @@
+a {
+    color: #daa520;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1em;
+}
+
+strong{
+    color: black;
+}
+
+.back{
+    width: 30px;
+    margin-top: 3em;
+    margin-left: 5em;
+}
+main{
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+.informacoes-produto {
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    margin-bottom: 1%;
+    margin-top: 2em;
+}
+
+.galeria {
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    margin-left: 5%;
+}
+
+.galeria img {
+    display: block;
+    max-width: 100%;
+    width: 300px;
+}
+
+.galeria #shampoo{
+    width: 1000px;
+}
+
+.galeria .principal {
+    width: 700px;
+    display: block;
+    margin-top: 1%;
+}
+
+.galeria ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 0px;
+    list-style: none;
+    gap: 5px;
+}
+
+.descricao-produto .nome-produto{
+    font-size: 2em;
+}
+
+.descricao-produto p{
+    max-width: 90%;
+    text-align: justify;
+}
+
+.descricao-produto .compra-produto{
+    max-width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 15%;
+}
+.descricao-produto .compra-produto button{
+    margin: 0;
+    border-radius: 5px;
+}
+.descricao-produto .compra-produto button:hover{
+    color: #09A23D;
+    background-color: white;
+    border: 1px solid #09A23D;
+}
+
+.container h1{
+    font-weight: bolder;
+}
+#card-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#btn-comprar{
+    display: flex;
+}
+
+#card-price #btn-comprar{
+    background-color: #daa520;
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+#btn-comprar a{
+    color: white;
+    text-decoration: none;
+}
+
+#card-price #btn-comprar:hover{
+    background-color: #b8860b;
+}
+
+#carrinho{
+    color: white;
+}
+
+.card-titulo {
+    font-size: 1.25rem;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+}
+
+#imagem-2{
+    width: 200px;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+#imagem-3{
+    width: 160px;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+/* Estilo da tela de pedido concluído*/
+
+.cont-pedido-concluido {
+    display: grid;
+    justify-content: center;
+}
+
+.cont-pedido-concluido .informacoes-comprovante figure {
+    text-align: center;
+}
+
+.cont-pedido-concluido {
+    font-size: 20px;
+    padding: 20px;
+    background-color: #D9D9D9;
+    margin: 3%;
+}
+
+.cont-pedido-concluido p {
+    display: grid;
+    justify-content: center;
+}
+
+.cont-pedido-concluido .informacoes-comprovante span {
+    color: #09A23D;
+    font-weight: bold;
+    display: grid;
+    justify-content: center;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.informacoes-comprovante {
+    padding: 60px;
+    display: grid;
+    justify-content: center;
+}
+
+.cont-pedido-concluido .informacoes-comprovante #voltar-home{
+    background-color: #09A23D;
+    width: 100%;
+    text-align: center;
+}
+
+.cont-pedido-concluido .informacoes-comprovante #voltar-home:hover{
+    background-color: white;
+    color: #09A23D;
+    border: 1px solid #09A23D;
+}

@@ -1,0 +1,140 @@
+.modal header{
+  width: auto;
+}
+
+.container-modal {
+  display: flex;
+  width: auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.form {
+  padding: 20px;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+#form-cadastro{
+  display: grid;
+  justify-content: center;
+}
+
+#form-cadastro input{
+  text-align: center;
+  width: 100%;
+}
+
+#form-cadastro #botoes-cadastro{
+  text-align: center;
+}
+.form p #criar-conta{
+  text-decoration: none;
+}
+
+#botoes_login{
+  display: flex;
+  gap: 42%;
+}
+
+#redefinir_senha{
+  font-size: small;
+  text-decoration: none;
+}
+
+#botoes-cadastro{
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+#botoes-cadastro a{
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+#botoes-cadastro #back-button{
+  background-color: #666;
+  color: white;
+}
+
+#botoes-cadastro #back-button:hover{
+  background-color: #444;
+}
+
+#botoes-cadastro #submit{
+  background-color: #daa520;
+  color: white;
+}
+
+#botoes-cadastro #submit:hover{
+  background-color: #b8860b;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+p {
+  margin: 0.5em 0 1em;
+  color: #666;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.entrar-modal{
+  background-color: #daa520;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+  
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  top: 0;
+}
+
+button:hover{
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button.back-button {
+  background-color: #444;
+  margin-top: 20px;
+  color: white;
+}
+
+.entrar-modal:hover {
+  background-color: #b8860b;
+}
+
+button.back-button:hover {
+  background-color: #333;
+}
