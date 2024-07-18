@@ -57,66 +57,57 @@
     </div>
 
     <header>
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a class="artwashcar" href="./index.html">Art WashCar</a>
-                </li>
-                <li>
-                    <input type="search" placeholder=" O que você procura?">
-                </li>
-                <li>
-                    <a href="">Carrinho</a>
-                </li>
-                <li>
-                    <a data-toggle="modal" data-target="#modalExemplo" id="open-modal" href="">Minha conta</a>
-                </li>
-            </ul>
-            <div class="hamburguer">
-                <span></span>
-                <span></span>
-                <span></span>
+        <nav class="navbar">
+            <div>
+                <a class="logo" href="./index.html">Art WashCar</a>
+                <input type="search" placeholder=" O que você procura?">
             </div>
-        </nav>
-
-
-        <nav class="categorias">
             <ul>
+                <li><a href="" class="indice">Carrinho</a></li>
+                <li><a data-toggle="modal" data-target="#modalExemplo" id="open-modal" href="">Minha conta</a></li>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./cat-acessorios.html">Acessórios</a></li>
                 <li><a href="./cat-limpeza-externa.html">Limpeza externa</a></li>
                 <li><a href="./cat-limpeza-interna.html">Limpeza interna</a></li>
             </ul>
+            <div class="mobile-menu" id="mobileMenu">
+
+            </div>
         </nav>
+
     </header>
 
     <main>
 
         <div id="carouselExampleIndicators" class="carousel slide custom-carousel">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
             </div>
-    
+
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./assets/img/1.webp" class=" w-100" alt="imagem-1">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/2.png" class=" w-100" alt="imagem-2">
-              </div>
+                <div class="carousel-item active">
+                    <img src="./assets/img/1.webp" class=" w-100" alt="imagem-1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/2.png" class=" w-100" alt="imagem-2">
+                </div>
             </div>
-    
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden"></span>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
             </button>
-    
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden"></span>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
             </button>
-    
+
         </div>
 
         <div class="container mt-3">
@@ -426,10 +417,10 @@
                 </li>
             </ul>
             <ul id="footer-selo-seguranca">
-               <span id="footer-titulo">Selos de Segurança</span>
-               <li>
-                <img id="selos-seguranca" src="./assets/img/selos-seguranca-removebg-preview.png" alt="">
-               </li> 
+                <span id="footer-titulo">Selos de Segurança</span>
+                <li>
+                    <img id="selos-seguranca" src="./assets/img/selos-seguranca-removebg-preview.png" alt="">
+                </li>
             </ul>
         </div>
         <span>contato@artwashcar.com.br</span>
@@ -439,7 +430,9 @@
     <script src="./assets/bootstrap-4.1.3-dist/js/jquery-3.3.1.slim.min.js.js"></script>
     <script src="./assets/bootstrap-4.1.3-dist/js/popper.min.js.js"></script>
     <script src="./assets/bootstrap-4.1.3-dist/js/bootstrap.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="./script.js"></script>
 </body>
 

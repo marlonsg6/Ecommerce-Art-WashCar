@@ -1,14 +1,14 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const hamburger = document.querySelector('.hamburger');
+
+function toggleMenu() {
+    const menuItems = document.querySelectorAll('.menu ul li.hidden');
     const categorias = document.querySelector('.categorias');
 
-    if (hamburger) {
-        hamburger.addEventListener('click', function () {
-            categorias.classList.toggle('open');
-        });
-    }
-});
+    menuItems.forEach(item => {
+        item.classList.toggle('hidden');
+    });
 
+    categorias.classList.toggle('show');
+}
 
 const imagens = document.querySelectorAll('.galeria li img');
 

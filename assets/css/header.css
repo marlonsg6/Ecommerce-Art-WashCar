@@ -1,28 +1,34 @@
-.artwashcar {
+.logo {
     font-weight: bold;
     font-size: 2em;
     font-family: zen dots;
+    color: white;
 }
 
-.artwashcar:hover {
+.logo:hover {
     color: #DAA520;
     text-decoration: none;
 }
 
-header {
+/* header {
     background-color: #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-}
+} */
 
-.menu {
+.navbar {
+    background-color: black;
     display: flex;
+    justify-content: space-between;
+    color: white;
     align-items: center;
+    padding: 10px 20px;
+    height: auto;
 }
 
-.menu ul {
+/* .menu ul {
     display: flex;
     list-style-type: none;
     margin: 0;
@@ -45,14 +51,14 @@ header {
 }
 
 .menu a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-family: 'zen dots', sans-serif;
     font-size: 1.2em;
     font-weight: bold;
-}
+} */
 
-.menu a:hover {
+header a:hover {
     color: #DAA520;
 }
 
@@ -65,17 +71,13 @@ header {
 }
 
 .categorias ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-family: 'zen dots', sans-serif;
 }
 
 .categorias ul li a:hover {
     border-bottom: 2px solid #DAA520;
-}
-
-header img {
-    width: 20px;
 }
 
 .menu ul li{
@@ -108,3 +110,4 @@ header img {
 #header2 a:hover {
     color: #DAA520;
 }
+
