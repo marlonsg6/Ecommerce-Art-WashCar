@@ -1,26 +1,19 @@
-@media screen and (max-width: 768px) {
-    .menu .logoname-input {
-        display: flex;
+@media (max-width: 768px) {
+    html{
+        font-size: 12px;
     }
 
-    header .menu ul li a {
-        font-size: auto;
+    .nav-links-desktop {
+        display: none;
     }
 
-    .menu ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+    .hamburger {
+        display: block;
     }
-
-    .artwashcar,
+    /* .artwashcar,
     input[type="search"] {
         display: inline-block;
         margin: 0 auto;
-    }
-
-
-
+    } */
 
 }

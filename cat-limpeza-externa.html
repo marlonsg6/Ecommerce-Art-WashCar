@@ -23,7 +23,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Autenticar</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <button type="button" class="closeModalButton" data-dismiss="modal" aria-label="Fechar">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -59,33 +59,36 @@
 
 
     <header>
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a class="artwashcar" href="./index.html">Art WashCar</a>
-                </li>
-                <li>
-                    <input type="search" placeholder=" O que você procura?">
-                </li>
-                <li>
-                    <a href="">Carrinho</a>
-                </li>
-                <li>
-                    <a data-toggle="modal" data-target="#modalExemplo" id="open-modal" href="">Minha conta</a>
-                </li>
+        <nav class="navbar">
+            <div>
+                <a class="logo" href="./index.html">Art WashCar</a>
+                <input type="search" placeholder=" O que você procura?">
+            </div>
+            <ul class="nav-links-desktop">
+                <li><a href="">Carrinho</a></li>
+                <li><a data-toggle="modal" data-target="#modalExemplo" id="open-modal" href="">Minha conta</a></li>
+                <li><a href="./index.html" onclick="ativarLink(event, this)">Home</a></li>
+                <li><a href="./cat-acessorios.html" onclick="ativarLink(event, this)">Acessórios</a></li>
+                <li><a href="./cat-limpeza-externa.html" onclick="ativarLink(event, this)">Limpeza externa</a></li>
+                <li><a href="./cat-limpeza-interna.html" onclick="ativarLink(event, this)">Limpeza interna</a></li>
             </ul>
+            <div class="mobile-menu" id="mobileMenu">
+                <button class="close" id="closeButton">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="nav-links-mobile">
+                    <li><a href="">Carrinho</a></li>
+                    <li><a data-toggle="modal" data-target="#modalExemplo" id="open-modal" href="">Minha conta</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./cat-acessorios.html">Acessórios</a></li>
+                    <li><a href="./cat-limpeza-externa.html">Limpeza externa</a></li>
+                    <li><a href="./cat-limpeza-interna.html">Limpeza interna</a></li>                
+                </ul>
+            </div>
+            <button class="hamburger" id="hamburgerButton">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
-
-
-        <nav class="categorias">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./cat-acessorios.html">Acessórios</a></li>
-                <li><a href="./cat-limpeza-externa.html">Limpeza externa</a></li>
-                <li><a href="./cat-limpeza-interna.html">Limpeza interna</a></li>
-            </ul>
-        </nav>
-
 
     </header>
 

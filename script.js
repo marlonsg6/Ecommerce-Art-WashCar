@@ -1,15 +1,33 @@
+//menu hamburger
+const hamburgerButton = document.querySelector("#hamburgerButton")
+const closeButton = document.querySelector("#closeButton")
 
-function toggleMenu() {
-    const menuItems = document.querySelectorAll('.menu ul li.hidden');
-    const categorias = document.querySelector('.categorias');
+const mobileMenu = document.querySelector("#mobileMenu")
 
-    menuItems.forEach(item => {
-        item.classList.toggle('hidden');
+hamburgerButton.addEventListener("click", function(){
+    mobileMenu.classList.add("flex");
+})
+
+closeButton.addEventListener("click", function(){
+    mobileMenu.classList.remove("flex");
+})
+
+//link ativo
+function ativarLink(event, elemento){
+    console.log("ativado");
+
+    document.querySelectorAll('a').forEach(link => {
+        link.style.borderBottom = "none";
     });
 
-    categorias.classList.toggle('show');
+    elemento.style.borderBottom = "1px solid yellow";
+
 }
 
+
+
+
+//galeria de img
 const imagens = document.querySelectorAll('.galeria li img');
 
 function galeriaTrocar(galeria) {
@@ -63,29 +81,6 @@ botoesMenos.forEach(botao => {
         const itemCarrinho = botao.closest('.item-carrinho');
         atualizarQuantidadeProduto(botao, itemCarrinho);
     });
-});
-
-
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    // Evento para o botão "ENTRAR/CADASTRAR"
-    document.getElementById('enterButton').addEventListener('click', function() {
-        // Salvar dados no localStorage ao clicar em "ENTRAR/CADASTRAR"
-        salvarDadosLocalStorage();
-
-        // Redirecionar para página de dados de pagamento
-        window.location.href = './dadosPagamento.html';
-    });
-
-    
-});
-x
-document.addEventListener('DOMContentLoaded', function () {
-    // Recuperar dados do localStorage e preencher os campos na página de pagamento
-    preencherCampos();
-
-   
 });
 
 // Função para salvar os dados do formulário no localStorage
