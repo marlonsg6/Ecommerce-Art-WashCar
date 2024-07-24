@@ -120,3 +120,17 @@
     text-decoration: none;
     color: white;
 }
+
+
+/* #counter{
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+#counter{
+    background-color: #262626;
+    padding: 2rem;
+    color: white;
+    border-radius: 8px;
+}

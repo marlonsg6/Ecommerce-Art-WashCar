@@ -26,7 +26,8 @@
     margin: 0;
     padding: 0;
     display: flex;
-    font-family: zen dots;
+    font-family: orbitron;
+    font-size: 1em;
 }
 
 .nav-links-desktop li {
@@ -99,24 +100,12 @@
     display: flex;
 }
 
-#header2 {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.logo-input{
+    display: flex;
+    gap: 5em;
+    /* margin: 0 10px; */
 }
 
-#header2 li {
-    margin-right: 15px;
-}
-
-#header2 a {
-    color: #fff;
-    text-decoration: none;
-    font-family: 'zen dots', sans-serif;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-#header2 a:hover {
-    color: #DAA520;
+.logo-input input{
+    border-radius: 5px;
 }

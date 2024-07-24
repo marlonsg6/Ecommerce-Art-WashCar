@@ -4,28 +4,13 @@ const closeButton = document.querySelector("#closeButton")
 
 const mobileMenu = document.querySelector("#mobileMenu")
 
-hamburgerButton.addEventListener("click", function(){
+hamburgerButton.addEventListener("click", function () {
     mobileMenu.classList.add("flex");
 })
 
-closeButton.addEventListener("click", function(){
+closeButton.addEventListener("click", function () {
     mobileMenu.classList.remove("flex");
 })
-
-//link ativo
-function ativarLink(event, elemento){
-    console.log("ativado");
-
-    document.querySelectorAll('a').forEach(link => {
-        link.style.borderBottom = "none";
-    });
-
-    elemento.style.borderBottom = "1px solid yellow";
-
-}
-
-
-
 
 //galeria de img
 const imagens = document.querySelectorAll('.galeria li img');
@@ -43,45 +28,16 @@ function galeriaClique(imagem) {
 
 imagens.forEach(galeriaClique);
 
+//Contador carrinho
 
-// Função para atualizar a quantidade do produto
-function atualizarQuantidadeProduto(botao, itemCarrinho) {
-    const spanQuantidade = itemCarrinho.querySelector('.quantidade-produto');
-    let quantidadeAtual = parseInt(spanQuantidade.textContent);
 
-    // Aumenta a quantidade
-    if (botao.classList.contains('botaomais')) {
-        quantidadeAtual++;
-    }
-    // Diminui a quantidade (se não for zero)
-    else if (botao.classList.contains('botaomenos') && quantidadeAtual > 0) {
-        quantidadeAtual--;
-    }
 
-    // Atualiza o valor no span
-    spanQuantidade.textContent = quantidadeAtual;
 
-    // Atualizar dados do carrinho no localStorage ou back-end (opcional)
-    // ...
-}
 
-// Adicionar eventos de clique aos botões
-const botoesMais = document.querySelectorAll('.botaomais');
-const botoesMenos = document.querySelectorAll('.botaomenos');
 
-botoesMais.forEach(botao => {
-    botao.addEventListener('click', () => {
-        const itemCarrinho = botao.closest('.item-carrinho');
-        atualizarQuantidadeProduto(botao, itemCarrinho);
-    });
-});
 
-botoesMenos.forEach(botao => {
-    botao.addEventListener('click', () => {
-        const itemCarrinho = botao.closest('.item-carrinho');
-        atualizarQuantidadeProduto(botao, itemCarrinho);
-    });
-});
+
+
 
 // Função para salvar os dados do formulário no localStorage
 function salvarDadosLocalStorage() {

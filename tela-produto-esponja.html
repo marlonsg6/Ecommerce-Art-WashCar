@@ -11,20 +11,87 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
 
 </head>
 
 <body>
 
-    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <header>
+        <nav class="navbar">
+            <div class="logo-input">
+                <a class="logo" href="./index.html">Art WashCar</a>
+                <input type="search" placeholder="O que você procura?">
+            </div>
+            <ul class="nav-links-desktop">
+                <li><a id="open-modalCart" href="#" data-toggle="modal" data-target="#modalCart">Carrinho</a></li>
+                <li><a class="open-modalAccount" href="#" data-toggle="modal" data-target="#modalAccount">Minha
+                        conta</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./cat-acessorios.html">Acessórios</a></li>
+                <li><a href="./cat-limpeza-externa.html">Limpeza externa</a></li>
+                <li><a href="./cat-limpeza-interna.html">Limpeza interna</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobileMenu">
+                <button class="close" id="closeButton">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="nav-links-mobile">
+                    <li><a href="#" data-toggle="modal" data-target="#modalCart">Carrinho</a></li>
+                    <li><a class="open-modalAccount" href="#" data-toggle="modal" data-target="#modalAccount">Minha
+                            conta</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./cat-acessorios.html">Acessórios</a></li>
+                    <li><a href="./cat-limpeza-externa.html">Limpeza externa</a></li>
+                    <li><a href="./cat-limpeza-interna.html">Limpeza interna</a></li>
+                </ul>
+            </div>
+            <button class="hamburger" id="hamburgerButton">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Modal do Carrinho -->
+    <div class="modal fade" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="modalCartLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Autenticar</h5>
-                    <button type="button" class="closeModalButton" data-dismiss="modal" aria-label="Fechar">
+                    <h5 class="modal-title" id="modalCartLabel">Carrinho</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Conteúdo do modal do carrinho -->
+                    <p>Seu carrinho está vazio.</p>
+                    <!-- Aqui você pode adicionar itens do carrinho dinamicamente -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal da Conta -->
+    <div class="modal fade" id="modalAccount" tabindex="-1" role="dialog" aria-labelledby="modalAccountLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalAccountLabel">Autenticar</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -39,58 +106,20 @@
                                 <label for="login-password">SENHA:</label>
                                 <input type="password" id="login-password" name="login-password">
                                 <div id="botoes_login">
-
                                     <button class="entrar-modal" type="submit">ENTRAR</button>
                                     <a id="redefinir_senha" href="./index.html">redefinir senha</a>
                                 </div>
-
                             </form>
-
                             <p>Primeira vez no site?
                                 <a id="criar-conta" href="./cadastro.html">Criar uma conta</a>
                             </p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
 
-    <header>
-        <nav class="navbar">
-            <div>
-                <a class="logo" href="./index.html">Art WashCar</a>
-                <input type="search" placeholder=" O que você procura?">
-            </div>
-            <ul class="nav-links-desktop">
-                <li><a href="">Carrinho</a></li>
-                <li><a data-toggle="modal" data-target="#modalExemplo" id="open-modal" href="">Minha conta</a></li>
-                <li><a href="./index.html" onclick="ativarLink(event, this)">Home</a></li>
-                <li><a href="./cat-acessorios.html" onclick="ativarLink(event, this)">Acessórios</a></li>
-                <li><a href="./cat-limpeza-externa.html" onclick="ativarLink(event, this)">Limpeza externa</a></li>
-                <li><a href="./cat-limpeza-interna.html" onclick="ativarLink(event, this)">Limpeza interna</a></li>
-            </ul>
-            <div class="mobile-menu" id="mobileMenu">
-                <button class="close" id="closeButton">
-                    <i class="fas fa-times"></i>
-                </button>
-                <ul class="nav-links-mobile">
-                    <li><a href="">Carrinho</a></li>
-                    <li><a data-toggle="modal" data-target="#modalExemplo" id="open-modal" href="">Minha conta</a></li>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./cat-acessorios.html">Acessórios</a></li>
-                    <li><a href="./cat-limpeza-externa.html">Limpeza externa</a></li>
-                    <li><a href="./cat-limpeza-interna.html">Limpeza interna</a></li>                
-                </ul>
-            </div>
-            <button class="hamburger" id="hamburgerButton">
-                <i class="fas fa-bars"></i>
-            </button>
-        </nav>
-
-    </header>
-    
     <main>
 
         <a href="./index.html">
@@ -238,10 +267,10 @@
                 </li>
             </ul>
             <ul id="footer-selo-seguranca">
-               <span id="footer-titulo">Selos de Segurança</span>
-               <li>
-                <img id="selos-seguranca" src="./assets/img/selos-seguranca-removebg-preview.png" alt="">
-               </li> 
+                <span id="footer-titulo">Selos de Segurança</span>
+                <li>
+                    <img id="selos-seguranca" src="./assets/img/selos-seguranca-removebg-preview.png" alt="">
+                </li>
             </ul>
         </div>
         <span>contato@artwashcar.com.br</span>
