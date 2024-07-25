@@ -95,8 +95,13 @@ main{
     align-items: center;
 }
 
-#btn-comprar{
-    display: flex;
+#btn-comprar button i{
+    color: white;
+}
+
+#btn-comprar button{
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 #card-price #btn-comprar{
