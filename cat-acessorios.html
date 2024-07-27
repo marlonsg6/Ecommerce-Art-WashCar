@@ -13,6 +13,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 
@@ -76,7 +81,6 @@
                     <!-- Aqui você pode adicionar itens do carrinho dinamicamente -->
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                     <button type="button" class="btn btn-primary">Finalizar Compra</button>
                 </div>
             </div>
@@ -127,15 +131,16 @@
                     <div class="card">
                         <img id="imagem-2" src="./assets/img/esponja-akora.jpeg" class="card-img-top" alt="Produto 2">
                         <div class="card-body">
-                            <h5 class="card-title">Kit 5 Esponjas biodegradável de Fibra de Côco - Ákora</h5>
+                            <a class="card-title" href="./tela-produto-esponja.html">Kit 5 Esponjas biodegradável de
+                                Fibra de Côco - Ákora</a>
                         </div>
                         <div class="card-body" id="card-price">
                             <strong class="card-text">R$ 44,90</strong>
-                            <a id="btn-comprar" href="./tela-produto-esponja.html">
-                                <button  data-name="Shampoo Automotivo V-Mol 5L - Vonixx" data-price="114.90">
-                                    <i class="fa fa-cart-plus"></i>
-                                </button>
-                            </a>
+                            <button id="btn-comprar" data-name="Kit 5 Esponjas biodegradável de
+                            Fibra de Côco - Ákora"
+                                data-price="44.90" data-img="./assets/img/esponja-akora.jpeg">
+                                <i class="fa fa-cart-plus"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -144,15 +149,14 @@
                     <div class="card">
                         <img id="imagem-3" src="./assets/img/flanela1.jfif" class="card-img-top" alt="Produto 2">
                         <div class="card-body">
-                            <h5 class="card-title">Flanela tecido de microfibra multiuso</h5>
+                            <a class="card-title" href="">Flanela tecido de microfibra multiuso</a>
                         </div>
                         <div class="card-body" id="card-price">
                             <strong class="card-text">R$ 11,90</strong>
-                            <a id="btn-comprar" href="">
-                                <button  data-name="Shampoo Automotivo V-Mol 5L - Vonixx" data-price="114.90">
-                                    <i class="fa fa-cart-plus"></i>
-                                </button>
-                            </a>
+                            <button id="btn-comprar" data-name="Flanela tecido de microfibra multiuso"
+                                data-price="11.90" data-img="./assets/img/flanela1.jfif">
+                                <i class="fa fa-cart-plus"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -161,15 +165,14 @@
                     <div class="card">
                         <img id="imagem-2" src="./assets/img/kit-vonixx.jpg" class="card-img-top" alt="Produto 3">
                         <div class="card-body">
-                            <h5 class="card-title">Kit Lavagem Automotiva Completa - Vonixx</h5>
+                            <a class="card-title" href="">Kit Lavagem Automotiva Completa - Vonixx</a>
                         </div>
                         <div class="card-body" id="card-price">
                             <strong class="card-text">R$ 178,49</strong>
-                            <a id="btn-comprar" href="">
-                                <button  data-name="Shampoo Automotivo V-Mol 5L - Vonixx" data-price="114.90">
-                                    <i class="fa fa-cart-plus"></i>
-                                </button>
-                            </a>
+                            <button id="btn-comprar" data-name="Kit Lavagem Automotiva Completa - Vonixx"
+                                data-price="178.49" data-img="./assets/img/kit-vonixx.jpg">
+                                <i class="fa fa-cart-plus"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -178,15 +181,14 @@
                     <div class="card">
                         <img id="imagem-2" src="./assets/img/pintor.webp" class="card-img-top" alt="Produto 3">
                         <div class="card-body">
-                            <h5 class="card-title">Snow Foam com conexão no gatilho - Ponto das mangueiras</h5>
+                            <a class="card-title" href="">Snow Foam com conexão no gatilho - Ponto das mangueiras</a>
                         </div>
                         <div class="card-body" id="card-price">
                             <strong class="card-text">R$ 188,80</strong>
-                            <a id="btn-comprar" href="">
-                                <button  data-name="Shampoo Automotivo V-Mol 5L - Vonixx" data-price="114.90">
-                                    <i class="fa fa-cart-plus"></i>
-                                </button>
-                            </a>
+                            <button id="btn-comprar" data-name="Snow Foam com conexão no gatilho - Ponto das mangueiras"
+                                data-price="188.90" data-img="./assets/img/pintor.webp">
+                                <i class="fa fa-cart-plus"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -195,15 +197,14 @@
                     <div class="card">
                         <img id="imagem-2" src="./assets/img/VAPORIZADOR.webp" class="card-img-top" alt="Produto 3">
                         <div class="card-body">
-                            <h5 class="card-title">Vaporizador e Higienizador - Intech</h5>
+                            <a class="card-title" href="">Vaporizador e Higienizador - Intech</a>
                         </div>
                         <div class="card-body" id="card-price">
                             <strong class="card-text">R$ 189,90</strong>
-                            <a id="btn-comprar" href="">
-                                <button  data-name="Shampoo Automotivo V-Mol 5L - Vonixx" data-price="114.90">
-                                    <i class="fa fa-cart-plus"></i>
-                                </button>
-                            </a>
+                            <button id="btn-comprar" data-name="Vaporizador e Higienizador - Intech"
+                                data-price="189.90" data-img="./assets/img/VAPORIZADOR.webp">
+                                <i class="fa fa-cart-plus"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -212,15 +213,14 @@
                     <div class="card">
                         <img id="imagem-2" src="./assets/img/esponja-airnex.jpg" class="card-img-top" alt="Produto 3">
                         <div class="card-body">
-                            <h5 class="card-title">Kit com 16 Esponjas de celulose - Airnex</h5>
+                            <a class="card-title" href="">Kit com 16 Esponjas de celulose - Airnex</a>
                         </div>
                         <div class="card-body" id="card-price">
                             <strong class="card-text">R$ 55,90</strong>
-                            <a id="btn-comprar" href="">
-                                <button  data-name="Shampoo Automotivo V-Mol 5L - Vonixx" data-price="114.90">
-                                    <i class="fa fa-cart-plus"></i>
-                                </button>
-                            </a>
+                            <button id="btn-comprar" data-name="Kit com 16 Esponjas de celulose - Airnex"
+                                data-price="55.90" data-img="./assets/img/esponja-airnex.jpg">
+                                <i class="fa fa-cart-plus"></i>
+                            </button>
                         </div>
                     </div>
                 </div>

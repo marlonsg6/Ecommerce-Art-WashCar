@@ -13,6 +13,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 
@@ -76,7 +81,6 @@
                     <!-- Aqui você pode adicionar itens do carrinho dinamicamente -->
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                     <button type="button" class="btn btn-primary">Finalizar Compra</button>
                 </div>
             </div>
@@ -128,15 +132,14 @@
                         <img id="imagem-2" src="./assets/img/biow-lava-a-seco1.webp" class="card-img-top"
                             alt="Produto 2">
                         <div class="card-body">
-                            <h5 class="card-title">Lavagem a Seco concentrado 1L - BioWash</h5>
+                            <a class="card-title" href="">Lavagem a Seco concentrado 1L - BioWash</a>
                         </div>
                         <div class="card-body" id="card-price">
                             <strong class="card-text">R$ 44,90</strong>
-                            <a id="btn-comprar" href="">
-                                <button  data-name="Shampoo Automotivo V-Mol 5L - Vonixx" data-price="114.90">
-                                    <i class="fa fa-cart-plus"></i>
-                                </button>
-                            </a>
+                            <button id="btn-comprar" data-name="Lavagem a Seco concentrado 1L - BioWash"
+                                data-price="44.90" data-img="./assets/img/biow-lava-a-seco1.webp">
+                                <i class="fa fa-cart-plus"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -145,15 +148,14 @@
                     <div class="card">
                         <img id="imagem-2" src="./assets/img/2974164-frente.jpg" class="card-img-top" alt="Produto 2">
                         <div class="card-body">
-                            <h5 class="card-title">Limpa vidros Cockpit 500 ml - Redex</h5>
+                            <a class="card-title" href="">Limpa vidros Cockpit 500 ml - Redex</a>
                         </div>
                         <div class="card-body" id="card-price">
                             <strong class="card-text">R$ 34,90</strong>
-                            <a id="btn-comprar" href="">
-                                <button  data-name="Shampoo Automotivo V-Mol 5L - Vonixx" data-price="114.90">
-                                    <i class="fa fa-cart-plus"></i>
-                                </button>
-                            </a>
+                            <button id="btn-comprar" data-name="Limpa vidros Cockpit 500 ml - Redex"
+                                data-price="34.90" data-img="./assets/img/2974164-frente.jpg">
+                                <i class="fa fa-cart-plus"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -163,15 +165,14 @@
                         <img id="imagem-2" src="./assets/img/limpa-vidrosinterno1.jfif" class="card-img-top"
                             alt="Produto 3">
                         <div class="card-body">
-                            <h5 class="card-title">Limpa vidros biodegradável 650mL - BioWash</h5>
+                            <a class="card-title" href="">Limpa vidros biodegradável 650mL - BioWash</a>
                         </div>
                         <div class="card-body" id="card-price">
                             <strong class="card-text">R$ 39,99</strong>
-                            <a id="btn-comprar" href="">
-                                <button  data-name="Shampoo Automotivo V-Mol 5L - Vonixx" data-price="114.90">
-                                    <i class="fa fa-cart-plus"></i>
-                                </button>
-                            </a>
+                            <button id="btn-comprar" data-name="Limpa vidros biodegradável 650mL - BioWash"
+                                data-price="39.99" data-img="./assets/img/limpa-vidrosinterno1.jfif">
+                                <i class="fa fa-cart-plus"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -180,15 +181,14 @@
                     <div class="card">
                         <img id="imagem-2" src="./assets/img/LIMPADOR COURO.webp" class="card-img-top" alt="Produto 3">
                         <div class="card-body">
-                            <h5 class="card-title">Limpador de couro Natural Multi Cleaner 1L - Nobrecar</h5>
+                            <a class="card-title" href="">Limpador de couro Natural Multi Cleaner 1L - Nobrecar</a>
                         </div>
                         <div class="card-body" id="card-price">
                             <strong class="card-text">R$ 65,90</strong>
-                            <a id="btn-comprar" href="">
-                                <button  data-name="Shampoo Automotivo V-Mol 5L - Vonixx" data-price="114.90">
-                                    <i class="fa fa-cart-plus"></i>
-                                </button>
-                            </a>
+                            <button id="btn-comprar" data-name="Shampoo Automotivo V-Mol 5L - Vonixx"
+                                data-price="65.90" data-img="./assets/img/LIMPADOR COURO.webp">
+                                <i class="fa fa-cart-plus"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -199,15 +199,14 @@
                             src="./assets/img/ok_limpa_vidros_500ml_go_eco_wash_4457_1_8cf7ff5ca419eeef195cc41f0c48b934.webp"
                             class="card-img-top" alt="Produto 3">
                         <div class="card-body">
-                            <h5 class="card-title">OK! Limpa Vidros Go 500ml - Eco Wash</h5>
+                            <a class="card-title" href="">OK! Limpa Vidros Go 500ml - Eco Wash</a>
                         </div>
                         <div class="card-body" id="card-price">
                             <strong class="card-text">R$ 37,93</strong>
-                            <a id="btn-comprar" href="">
-                                <button  data-name="Shampoo Automotivo V-Mol 5L - Vonixx" data-price="114.90">
-                                    <i class="fa fa-cart-plus"></i>
-                                </button>
-                            </a>
+                            <button id="btn-comprar" data-name="OK! Limpa Vidros Go 500ml - Eco Wash"
+                                data-price="37.93" data-img="./assets/img/ok_limpa_vidros_500ml_go_eco_wash_4457_1_8cf7ff5ca419eeef195cc41f0c48b934.webp">
+                                <i class="fa fa-cart-plus"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -217,15 +216,14 @@
                         <img id="imagem-2" src="./assets/img/tenso-limpeza-interna1.webp" class="card-img-top"
                             alt="Produto 3">
                         <div class="card-body">
-                            <h5 class="card-title">Limpador Multitensoativo 1l - MaxBio</h5>
+                            <a class="card-title" href="">Limpador Multitensoativo 1l - MaxBio</a>
                         </div>
                         <div class="card-body" id="card-price">
                             <strong class="card-text">R$ 49,88</strong>
-                            <a id="btn-comprar" href="">
-                                <button  data-name="Shampoo Automotivo V-Mol 5L - Vonixx" data-price="114.90">
-                                    <i class="fa fa-cart-plus"></i>
-                                </button>
-                            </a>
+                            <button id="btn-comprar" data-name="Limpador Multitensoativo 1l - MaxBio"
+                                data-price="49.88" data-img="./assets/img/tenso-limpeza-interna1.webp">
+                                <i class="fa fa-cart-plus"></i>
+                            </button>
                         </div>
                     </div>
                 </div>

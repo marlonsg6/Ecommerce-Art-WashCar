@@ -100,22 +100,31 @@ main{
 }
 
 #btn-comprar button{
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
 }
 
 #card-price #btn-comprar{
     background-color: #daa520;
     display: flex;
     align-items: center;
-    padding: 2%;
+    padding: 5px 1.25rem;
+    color: white;
     border-radius: 5px;
     gap: 10px;
 }
 
-#btn-comprar a{
-    color: white;
+.card-title {
     text-decoration: none;
+    color: #000;
+    transition: 0.4s;
+    font-family: Poppins;
+    font-size: 18px;
+}
+
+.card-title:hover{
+    text-decoration: none;
+    color: #daa520;
 }
 
 #card-price #btn-comprar:hover{
@@ -126,9 +135,7 @@ main{
     color: white;
 }
 
-.card-titulo {
-    font-size: 1.25rem;
-}
+
 
 .card-img-top {
     height: 200px;
