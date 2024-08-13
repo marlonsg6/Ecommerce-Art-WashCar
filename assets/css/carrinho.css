@@ -1,3 +1,14 @@
+#modalCart .modal-body #p{
+    color: black;
+    font-weight: bold;
+}
+
+.block{
+    display: block;
+}
+
+
+
 .carrinho #meu-carrinho{
     font-size: 30px;
     display: flex;

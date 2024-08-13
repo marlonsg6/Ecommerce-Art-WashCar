@@ -4,7 +4,10 @@ const mobileMenu = document.querySelector("#mobileMenu");
 const imagens = document.querySelectorAll('.galeria li img');
 const cartItemsContainer = document.querySelector('#cart-items')
 const cartTotal = document.querySelector('#cart-total');
+const cartCounter = document.querySelector('#cart-counter');
+const emptyCart = document.querySelector('#empty-cart');
 
+let cart = [];
 
 //menu hamburger
 hamburgerButton.addEventListener("click", function () {
@@ -14,6 +17,7 @@ hamburgerButton.addEventListener("click", function () {
 closeButton.addEventListener("click", function () {
     mobileMenu.classList.remove("flex");
 })
+
 
 
 //galeria de img
@@ -30,14 +34,157 @@ function galeriaClique(imagem) {
 
 imagens.forEach(galeriaClique);
 
-//Contador carrinho
-let cart = [];
+
+
+// Seleciona todos os contadores de carrinho na página
+const cartCounters = document.querySelectorAll('.cart-counter');
+
+cartCounters.forEach(cartCounter => {
+    const minusButton = cartCounter.querySelector('.minus');
+    const plusButton = cartCounter.querySelector('.plus');
+    const quantityDisplay = cartCounter.querySelector('.quantidade-produto');
+
+    // Verifica se os elementos existem antes de prosseguir
+    if (!minusButton || !plusButton || !quantityDisplay) {
+        console.error("Elemento de contador não encontrado. Verifique o HTML.");
+        return;
+    }
+
+    // Inicializa a quantidade com o valor atual do HTML
+    let quantity = parseInt(quantityDisplay.textContent);
+
+    // Função para atualizar a exibição da quantidade
+    function updateQuantityDisplay() {
+        quantityDisplay.textContent = quantity;
+    }
+
+    // Evento de clique no botão de subtração
+    minusButton.addEventListener('click', () => {
+        if (quantity > 0) { // Previne que a quantidade fique negativa
+            quantity--;
+            updateQuantityDisplay();
+        }
+    });
+
+    // Evento de clique no botão de adição
+    plusButton.addEventListener('click', () => {
+        quantity++;
+        updateQuantityDisplay();
+    });
+
+    // Atualiza a exibição inicial
+    updateQuantityDisplay();
+});
 
 
 
+//Itens carrinho
 
 
+menu.addEventListener("click", function (event) {
+    let parentButton = event.target.closest(".add-to-cart-btn");
+    
+    if (parentButton) {
+        const name = parentButton.getAttribute("data-name");
+        const price = parseFloat(parentButton.getAttribute("data-price"));
+        const img = parentButton.getAttribute("data-img");
+        addToCart(name, price, img)
+    }
 
+})
+
+function addToCart(name, price, img) {
+    const existingItem = cart.find(item => item.name === name);
+
+    if (existingItem) {
+        existingItem.quantity += 1;
+
+    } else {
+
+        cart.push({
+            img,
+            name,
+            price,
+            quantity: 1,
+        });
+
+    }
+
+    updateCartModal()
+}
+
+
+function updateCartModal() {
+    cartItemsContainer.innerHTML = "";
+    let total = 0;
+
+    if(cart.length === 0){
+        emptyCart.style.display = 'block';
+    } else {
+        emptyCart.style.display = 'none';
+    }
+
+    cart.forEach(item => {
+        const cartItemElement = document.createElement("div");
+        cartItemElement.classList.add("flex", "justify-between", "mb-4", "flex-col");
+        const totalPriceItem = item.price * item.quantity;
+
+        cartItemElement.innerHTML = `
+            <div class="flex items-center justify-between">
+                <div>
+                <p class="font-medium">${item.src}</p>
+                    <img>${item.img}</img>
+                    <p>qtd: ${item.quantity}</p>
+                    <p class="font-medium mt-2">${totalPriceItem.toFixed(2)}</p>
+                </div>
+                
+                <div>
+                    <button class="remove-btn" data-name="${item.name}">
+                        Remover
+                    </button>
+                </div>
+            </div> 
+        `
+
+        total += item.price * item.quantity
+
+        cartItemsContainer.appendChild(cartItemElement)
+    })
+
+    cartTotal.textContent = total.toLocaleString("pt-BR",{
+        style: "currency",
+        currency: "BRL"
+    });
+
+    cartCounter.innerHTML = cart.length;
+
+}
+
+
+cartItemsContainer.addEventListener("click", function(event){
+    if(event.target.classList.contains("remove-btn")) {
+        const name = event.target.getAttribute("data-name")
+        
+        removeItemCart(name);
+    }   
+})
+
+function removeItemCart(name){
+    const index = cart.findIndex(item => item.name === name);
+
+    if(index !== -1){
+        const item = cart[index]
+
+        if(item.quantity > 1){
+            item.quantity -= 1;
+            updateCartModal();
+            return
+        }
+
+        cart.splice(index, 1);
+        updateCartModal();
+    }
+}
 
 
 
